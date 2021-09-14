@@ -9,7 +9,10 @@ namespace SCP_Interpreter.Constructors
 {
     public class ReadScript
     {
-
+        /// <summary>
+        /// Gets the specified Index, and reads the script accordingly
+        /// </summary>
+        /// <param name="index"></param>
         public ReadScript(int index)
         {
             IndexScript = index;
@@ -17,8 +20,15 @@ namespace SCP_Interpreter.Constructors
 
         private string ScriptDirectory() => Path.Combine(Directory.GetCurrentDirectory(), "Scripts");
         private int IndexScript;
+
+        /// <summary>
+        /// Stores the Script Commands Locally and in Memory
+        /// </summary>
         public static IEnumerable<string> ScriptCommands;
 
+        /// <summary>
+        /// Loads the Selected Script by the Index
+        /// </summary>
         public void LoadScript()
         {
             string selectedFile = Path.Combine(ScriptDirectory(), ApplicationLaunch.Scripts.ElementAt(IndexScript));

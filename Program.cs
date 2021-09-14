@@ -11,6 +11,7 @@ namespace SCP_Interpreter
     {
         static void Main(string[] args)
         {
+            // Starting Application
             ApplicationLaunch launch = new ApplicationLaunch(true);
             launch.Launch();
 

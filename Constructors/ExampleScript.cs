@@ -9,6 +9,9 @@ namespace SCP_Interpreter.Constructors
 {
     public class ExampleScript
     {
+        /// <summary>
+        /// Used to open the script
+        /// </summary>
         public static void WriteExampleScript()
         {
             string mainDir = Directory.GetCurrentDirectory();

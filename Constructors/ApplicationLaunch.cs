@@ -17,6 +17,9 @@ namespace SCP_Interpreter.Constructors
         private bool checkDirs;
         public static List<string> Scripts = new List<string>();
         
+        /// <summary>
+        /// Method Used at the Application Launch
+        /// </summary>
         public void Launch()
         {
             string mainDir = Directory.GetCurrentDirectory();

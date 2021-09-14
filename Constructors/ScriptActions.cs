@@ -8,7 +8,9 @@ namespace SCP_Interpreter.Constructors
 {
     public class ScriptActions
     {
-
+        /// <summary>
+        /// Executes all given Commands in the Script
+        /// </summary>
         public static void ExecuteScript()
         {
             Dictionary<string, dynamic> Variables = new Dictionary<string, dynamic>();
