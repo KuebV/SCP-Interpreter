@@ -1,0 +1,4 @@
+var a "Hello World!"
+var b "This is Dr.Talloran Speaking"
+print a
+print b

@@ -1,0 +1,7 @@
+C:\Users\mary\source\repos\SCP-Interpreter\SCP-Interpreter\bin\Debug\SCP-Interpreter.exe.config
+C:\Users\mary\source\repos\SCP-Interpreter\SCP-Interpreter\bin\Debug\SCP-Interpreter.exe
+C:\Users\mary\source\repos\SCP-Interpreter\SCP-Interpreter\bin\Debug\SCP-Interpreter.pdb
+C:\Users\mary\source\repos\SCP-Interpreter\SCP-Interpreter\obj\Debug\SCP-Interpreter.csprojAssemblyReference.cache
+C:\Users\mary\source\repos\SCP-Interpreter\SCP-Interpreter\obj\Debug\SCP-Interpreter.csproj.CoreCompileInputs.cache
+C:\Users\mary\source\repos\SCP-Interpreter\SCP-Interpreter\obj\Debug\SCP-Interpreter.exe
+C:\Users\mary\source\repos\SCP-Interpreter\SCP-Interpreter\obj\Debug\SCP-Interpreter.pdb
