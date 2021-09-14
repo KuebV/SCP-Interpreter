@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SCP_Interpreter.Encyption;
 
 namespace SCP_Interpreter.Constructors
 {
@@ -39,9 +40,29 @@ namespace SCP_Interpreter.Constructors
                         else
                             Console.WriteLine(cmdVar.ElementAt(1));
                         break;
+                    case "input":
+                        if (command.Contains("\""))
+                        {
+                            string strVar = String.Join(" ", cmdVar, 2, cmdVar.Length - 2);
+                            Console.WriteLine(strVar);
+
+                            var variable = Console.ReadLine();
+                            Variables.Add(cmdVar.ElementAt(1), variable);
+                        }
+                        break;
+                    case "translate":
+                        if (command.Contains("\""))
+                        {
+                            string strVar = String.Join(" ", cmdVar, 2, cmdVar.Length - 2);
+                            string language = Translator.HumanToSCP(strVar.Replace("\"", ""));
+
+                            Variables.Add(cmdVar.ElementAt(1), language);
+                        }
+                        break;
                     default:
                         Console.WriteLine("Unknown Type : " + cmdVar.ElementAt(0));
                         break;
+                    
                 }
 
             }

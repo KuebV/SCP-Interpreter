@@ -47,6 +47,8 @@
     <Compile Include="Constructors\ExampleScript.cs" />
     <Compile Include="Constructors\ReadScript.cs" />
     <Compile Include="Constructors\ScriptActions.cs" />
+    <Compile Include="Encyption\AlphabetList.cs" />
+    <Compile Include="Encyption\Translator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

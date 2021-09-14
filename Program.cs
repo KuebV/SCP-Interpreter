@@ -21,6 +21,7 @@ namespace SCP_Interpreter
             foreach (var file in ApplicationLaunch.Scripts)
             {
                 Console.WriteLine($"[{index}] - {file}");
+                index++;
             }
 
             Console.WriteLine("\n\nEnter the number linked to the script");
