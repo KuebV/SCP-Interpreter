@@ -12,7 +12,7 @@ namespace SCP_Interpreter.Encyption
         public static string HumanToSCP(string message)
         {
             List<char> AlphabetChar = new List<char> { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',
-            'm', 'n', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
+            'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
 
             string builder = string.Empty;
             foreach (char charLetter in message.ToLower())

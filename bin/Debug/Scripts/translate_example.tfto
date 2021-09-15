@@ -1,2 +1,8 @@
 translate scpString "You are foolish for trying to solve this"
+translate serverString "two oh three dot ten dot nine six dot two six colon seven seven eight two
+translate nullString "this doesn't mean anything the morse was a warm up this is just hell now"
+translate anotherNull "you are incorrect about everything"
 print scpString
+print serverString
+print nullString
+print anotherNull
