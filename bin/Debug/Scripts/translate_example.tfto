@@ -1,2 +1,2 @@
-translate scpString "good job for making it this far next code is makethisrightorelse
+translate scpString "You are foolish for trying to solve this"
 print scpString

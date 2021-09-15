@@ -59,10 +59,19 @@ namespace SCP_Interpreter.Constructors
                             Variables.Add(cmdVar.ElementAt(1), language);
                         }
                         break;
-                    default:
-                        Console.WriteLine("Unknown Type : " + cmdVar.ElementAt(0));
+                    case "varint":
+                        double varint;
+                        if (double.TryParse(cmdVar.ElementAt(2), out varint))
+                            Variables.Add(cmdVar.ElementAt(1), varint);
+                            
                         break;
-                    
+                    default:
+                        if (string.IsNullOrEmpty(command))
+                            break;
+                        else
+                            Console.WriteLine("Unknown Type : " + cmdVar.ElementAt(0));
+                        break;
+
                 }
 
             }
