@@ -35,7 +35,7 @@ namespace SCP_Interpreter.Constructors
                     Scripts.Add(potentialScript.Name);
             }
 
-            if (ScriptDirectory.GetFiles().Length == 1)
+            if (ScriptDirectory.GetFiles().Length <= 1)
             {
                 string exampleFile = Path.Combine(scripts, "example-script.tfto");
                 File.Create(exampleFile);
