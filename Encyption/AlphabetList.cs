@@ -11,8 +11,7 @@ namespace SCP_Interpreter.Encyption
 
         public static List<string> SCPNumber = new List<string>()
         {
-            ".", "-", "~", "--", ">", ".>", "->", "~>", "-->", ">>", ".>>", ".>.>", "~>>", "->->", ">>>", ".>>>", "->>>", "~>>>",
-            ".~>>>", "*", "*.", "*-", "*~", "*--", "*>", "*.>"
+            ".", "*", "<", ">", "-", "..*..", "*..*.", "<.>", ".*.**.", "--", ".--", ".--.", "<-**.", ">-.<.", "<*..*.-", "--.*<", ">--*.", "**--<.", ">-.*..<..", ".....*<--", "---.>.", ">>*..<-*", "*<.>.-.*", "--<*.>>", "<><-..<>.", "<>*.--*>"
         };
 
     }
@@ -23,6 +22,11 @@ namespace SCP_Interpreter.Encyption
         {
             return dict.FirstOrDefault(entry =>
                 EqualityComparer<V>.Default.Equals(entry.Value, val)).Key;
+        }
+
+        public static dynamic At <dynamic>(this ArraySegment<dynamic> element, int index)
+        {
+            return element.ElementAt(index);
         }
     }
 }

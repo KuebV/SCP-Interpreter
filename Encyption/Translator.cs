@@ -24,7 +24,7 @@ namespace SCP_Interpreter.Encyption
                     int index = AlphabetChar.IndexOf(charLetter);
                     string character = AlphabetList.SCPNumber[index];
 
-                    builder += $" {character}";
+                    builder += $"{character}";
                 }
             }
 

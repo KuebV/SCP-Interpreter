@@ -26,6 +26,8 @@ namespace SCP_Interpreter.Constructors
         /// </summary>
         public static IEnumerable<string> ScriptCommands;
 
+        public static string ScriptName;
+
         /// <summary>
         /// Loads the Selected Script by the Index
         /// </summary>
@@ -33,6 +35,8 @@ namespace SCP_Interpreter.Constructors
         {
             string selectedFile = Path.Combine(ScriptDirectory(), ApplicationLaunch.Scripts.ElementAt(IndexScript));
             ScriptCommands = File.ReadLines(selectedFile);
+
+            ScriptName = ApplicationLaunch.Scripts.ElementAt(IndexScript);
         }
     }
 }

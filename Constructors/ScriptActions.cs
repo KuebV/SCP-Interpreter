@@ -19,9 +19,14 @@ namespace SCP_Interpreter.Constructors
             foreach (var command in ReadScript.ScriptCommands)
             {
                 string[] cmdVar = command.Split(' ');
-                switch (cmdVar.ElementAt(0))
+                ArraySegment<string> arguments = new ArraySegment<string>(cmdVar);
+                switch (arguments.At(0))
                 {
                     case "var":
+                        if (Variables.ContainsKey(cmdVar.ElementAt(1)))
+                        {
+                            Variables.Remove(cmdVar.ElementAt(1));
+                        }
                         if (command.Contains("\""))
                         {
                             string strVar = String.Join(" ", cmdVar, 2, cmdVar.Length - 2);
@@ -64,6 +69,13 @@ namespace SCP_Interpreter.Constructors
                         if (double.TryParse(cmdVar.ElementAt(2), out varint))
                             Variables.Add(cmdVar.ElementAt(1), varint);
                             
+                        break;
+                    case "return":
+                        bool result;
+                        if (Boolean.TryParse(arguments.At(1), out result))
+                        {
+                            ScriptTools.ScriptResults.Add(ReadScript.ScriptName, result);
+                        }
                         break;
                     default:
                         if (string.IsNullOrEmpty(command))
